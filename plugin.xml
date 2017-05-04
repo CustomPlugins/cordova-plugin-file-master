@@ -225,7 +225,8 @@ to config.xml in order for the application to find previously stored files.
             </feature>
         </config-file>
         <header-file src="src/ios/CDVFile.h" />
-        <source-file src="src/ios/CDVFile.m" />
+        <!-- <source-file src="src/ios/CDVFile.m" /> -->
+        <source-file src="src/ios/CDVFile.m" compiler-flags="-fno-objc-arc"/>
         <header-file src="src/ios/CDVLocalFilesystem.h" />
         <source-file src="src/ios/CDVLocalFilesystem.m" />
         <header-file src="src/ios/CDVAssetLibraryFilesystem.h" />
